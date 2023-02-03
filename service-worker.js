@@ -73,3 +73,4 @@ self.addEventListener('fetch', event => {
         );
     }
 });
+console.log("This is send from the service worker");
