@@ -25,7 +25,7 @@ async function register() {
     if ('serviceWorker' in navigator) {
         try {
             // Change the service worker URL to see what happens when the SW doesn't exist
-            const registration = await navigator.serviceWorker.register("sw.js");
+            const registration = await navigator.serviceWorker.register('/service-worker.js');
             showResult("Service worker registered");
 
         } catch (error) {
